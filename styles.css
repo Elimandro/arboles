@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa; /* Color de fondo suave */
+    color: #2e7d32; /* Color de texto verde oscuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Alineación en la parte superior */
+    min-height: 100vh;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em; /* Tamaño de fuente más pequeño */
+    color: #388e3c; /* Color verde para el título */
+}
+
+/* Ajustar la imagen principal */
+#mainImage {
+    width: 100%; /* Mantiene el ancho del contenedor */
+    max-width: 600px; /* Establece un ancho máximo para la imagen */
+    height: 200px; /* Establece una altura fija */
+    object-fit: cover; /* Ajusta la imagen para cubrir el área */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    animation: fadeIn 1s; /* Animación de entrada */
+}
+
+#progressContainer {
+    width: 80%;
+    background-color: #cfd8dc; /* Color de fondo de la barra */
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+#progressBar {
+    width: 0;
+    height: 30px;
+    background-color: #388e3c; /* Color de la barra de progreso */
+    transition: width 0.5s ease;
+}
+
+input[type="number"] {
+    padding: 10px;
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 10px 0; /* Margen */
+}
+
+button {
+    background-color: #4caf50; /* Color verde brillante para el botón */
+    color: white;
+    border: none;
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 1em; /* Tamaño de fuente más pequeño */
+    transition: background-color 0.3s ease; /* Transición suave al cambiar de color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+button:hover {
+    background-color: #45a049; /* Color verde al pasar el mouse */
+}
+
+/* Estilo para el footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex; /* Flexbox para alinear la imagen y texto */
+    align-items: center; /* Alineación vertical centrada */
+    justify-content: center; /* Centra horizontalmente */
+    background-color: rgba(241, 241, 241, 0.9); /* Color de fondo del footer */
+    padding: 5px; /* Espaciado interno reducido */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+/* Estilo para el logo en el footer */
+#logo {
+    max-width: 50px; /* Ajusta el tamaño del logo como desees */
+    height: auto; /* Mantiene la proporción del logo */
+    margin-right: 10px; /* Espacio a la derecha del logo */
+}
+
+/* Animación de desvanecimiento */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Mejoras en el texto */
+p {
+    margin: 10px 0; /* Margen superior e inferior */
+    font-size: 1.1em; /* Tamaño de fuente ajustado */
+    text-align: center; /* Centra el texto */
+}
