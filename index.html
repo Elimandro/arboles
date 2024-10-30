@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Árboles Plantados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="https://sleepnatocha.com/images/webkit/image/587-image.jpg" alt="Imagen Principal" id="mainImage"> <!-- Cambia la ruta aquí -->
+        <h1>Contador de Árboles Plantados</h1>
+    </header>
+    <main>
+        <div id="progressContainer">
+            <div id="progressBar"></div>
+        </div>
+        <p id="progressText">0 árboles plantados</p>
+        <p>Total donado: $<span id="totalDonated">0.00</span></p>
+        <label for="donationAmount">Cantidad a donar: </label>
+        <input type="number" id="donationAmount" placeholder="Ingrese monto" min="1">
+        <button id="donateButton" onclick="donate(Number(document.getElementById('donationAmount').value))">Donar</button>
+    </main>
+    <footer>
+        <img src="https://scontent.fmga3-2.fna.fbcdn.net/v/t39.30808-6/426131369_694555619530953_7445981524430163766_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=w-Lrt7nxGLoQ7kNvgFExPiR&_nc_zt=23&_nc_ht=scontent.fmga3-2.fna&_nc_gid=AOH6MKb27SroVbLOxP54Unk&oh=00_AYCvYxyEihAENEcvCtIAznmHa8DuHxSNae7fNBZDg-emAw&oe=67279256" alt="Logo UNAN León" id="logo">
+        <span>Hecho por estudiantes de la UNAN León</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
